@@ -7,13 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the code from your version control system
-                git branch: 'main', url: 'https://github.com/your-repo/task-manager.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 script {
